@@ -21,6 +21,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::view('/Landing', 'landing');
+Route::view('/page1', 'Page1');
 Route::match(['get', 'post'], '/dashboard', function(){
     return view('dashboard');
 });
