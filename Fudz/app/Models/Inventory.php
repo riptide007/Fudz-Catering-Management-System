@@ -4,14 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class Inventory extends Model
 {
-    use HasFactory;
+    use HasFactory, Notifiable;
     public $table = 'items';
     public $primaryKey = 'id';
-    public $timestamps = true;
-    public $fillable = [
+
+    protected $fillable = [
         'Name','quantity','priceperunit','unit','ItemCondition'
     ];
 }

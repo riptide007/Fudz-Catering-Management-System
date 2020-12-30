@@ -4,14 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class Employee extends Model
 {
-    use HasFactory;
+    use HasFactory, Notifiable;
     public $table = 'employee';
     public $primaryKey = 'id';
-    public $timestamps = true;
-    public $fillable = [
+
+    protected $fillable = [
         'Surname','Fname','Lname','Telephone','email','Address','Speciality','Average_Pay'
     ];
 }
