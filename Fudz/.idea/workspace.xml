@@ -123,6 +123,9 @@
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1k046EHoCZWwG5xrHGAqppropBY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -132,16 +135,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Fudz\resources" />
+      <recent name="C:\wamp64\www\Fudz\resources\views" />
       <recent name="C:\wamp64\www\Fudz\resources\views\layouts" />
       <recent name="C:\wamp64\www\Fudz\resources\assets\media\favicons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Fudz\resources\views\Input" />
       <recent name="C:\wamp64\www\Fudz\resources\views" />
     </key>
   </component>
@@ -177,6 +183,11 @@
       <workItem from="1608805370622" duration="6330000" />
       <workItem from="1608926003326" duration="22000" />
       <workItem from="1609323697215" duration="4423000" />
+      <workItem from="1609499294590" duration="11587000" />
+      <workItem from="1609571476103" duration="1747000" />
+      <workItem from="1609661293565" duration="3123000" />
+      <workItem from="1610888235989" duration="685000" />
+      <workItem from="1610888973883" duration="4478000" />
     </task>
     <servers />
   </component>
@@ -187,7 +198,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/Page5.blade.php</url>
+          <url>file://$PROJECT_DIR$/resources/views/Input/InventoryIn.blade.php</url>
           <line>3</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>

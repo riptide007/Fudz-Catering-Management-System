@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-        <title>{{ config('app.name', 'Fudz Enterprize Management System') }}</title>
+        <title>{{ config('app.name', 'Fudz Enterprise Management System') }}</title>
 
         <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -12,7 +12,7 @@
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <title>{{ config('app.name', 'Fudz Enterprize Management System') }}</title>
+        <title>{{ config('app.name', 'Fudz Enterprise Management System') }}</title>
 
         <!-- Icons -->
         <link rel="shortcut icon" href="{{ asset('media/favicons/fudz.png') }}">
@@ -22,7 +22,7 @@
         <!-- Fonts and Styles -->
         @yield('css_before')
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
-        <link rel="stylesheet" id="css-main" href="{{ mix('/css/codebase.css') }}">
+        <link rel="stylesheet" id="css-main" href="{{ asset('/css/codebase.css') }}">
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -36,11 +36,18 @@
         <link rel="stylesheet" href="assets/js/plugins/flatpickr/flatpickr.min.css">
 
         <!-- You can include a specific file from public/css/themes/ folder to alter the default color theme of the template. eg: -->
-        <!-- <link rel="stylesheet" id="css-theme" href="{{ mix('/css/themes/corporate.css') }}"> -->
+        <!-- <link rel="stylesheet" id="css-theme" href="{{ asset('/css/themes/corporate.css') }}"> -->
         @yield('css_after')
 
         <!-- Scripts -->
-        <script>window.Laravel = {!! json_encode(['csrfToken' => csrf_token(),]) !!};</script>
+    <!--<script>window.Laravel = {!! json_encode(['csrfToken' => csrf_token(),]) !!};</script>-->
+        <script>
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        </script>
 
     </head>
     <body>
@@ -277,7 +284,7 @@
         <!-- END Page Container -->
 
         <!-- Codebase Core JS -->
-        <script src="{{ mix('js/codebase.app.js') }}"></script>
+        <script src="{{ asset('js/codebase.app.js') }}"></script>
         <script src="assets/js/codebase.core.min.js"></script>
 
         <!-- Page JS Plugins -->
@@ -300,7 +307,7 @@
         <script>jQuery(function(){ Codebase.helpers(['flatpickr', 'datepicker', 'colorpicker', 'maxlength', 'select2', 'masked-inputs', 'rangeslider', 'tags-inputs']); });</script>
 
         <!-- Laravel Scaffolding JS -->
-        <script src="{{ mix('js/laravel.app.js') }}"></script>
+        <script src="{{ asset('js/laravel.app.js') }}"></script>
 
         @yield('js_after')
     </body>

@@ -6,13 +6,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
+
 class Client extends Model
 {
     use HasFactory, Notifiable;
     public $table = 'client';
     public $primaryKey = 'id';
 
-    protected $fillable = [
-        'Surname','Fname','Lname','Telephone','email','Address'
+    protected $guarded = [
+
     ];
+
+
 }

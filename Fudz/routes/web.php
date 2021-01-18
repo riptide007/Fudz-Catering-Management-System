@@ -21,8 +21,11 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::view('/Landing', 'landing');
-Route::view('/page1', 'ClientIn');
-Route::view('/page2', 'CateringIn');
+Route::view('/page1', 'Input/ClientIn');
+Route::view('/page2', 'Input/CateringIn');
+Route::view('/page3', 'Input/EmployeeIn');
+Route::view('/page4', 'Input/SupplierIn');
+Route::view('/page5', 'Input/InventoryIn');
 Route::view('/test-page', 'TestPage');
 Route::match(['get', 'post'], '/dashboard', function(){
     return view('dashboard');
@@ -30,3 +33,10 @@ Route::match(['get', 'post'], '/dashboard', function(){
 Route::view('/examples/plugin-helper', 'examples.plugin_helper');
 Route::view('/examples/plugin-init', 'examples.plugin_init');
 Route::view('/examples/blank', 'examples.blank');
+
+Route::post('/page1', '\App\Http\Controllers\ClientController@create');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
