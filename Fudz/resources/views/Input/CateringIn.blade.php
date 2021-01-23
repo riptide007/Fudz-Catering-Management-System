@@ -9,29 +9,29 @@
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="ClientIn.blade.php" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page2" method="post" onsubmit="return false;">
                                 <div class="form-group row">
                                     <div class="col-6">
-                                        <label for="contact1-surname">Event type</label>
-                                        <input type="text" class="form-control" id="contact1-surname" name="contact1-surname" placeholder="Enter Client's Surname..">
+                                        <label for="Event_type">Event type</label>
+                                        <input type="text" class="form-control" id="Event_type" name="Event_type" placeholder="Enter Client's Surname..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-firstname">Location</label>
-                                        <input type="text" class="form-control" id="contact1-firstname" name="contact1-firstname" placeholder="Enter Client's firstname..">
+                                        <label for="Location">Location</label>
+                                        <input type="text" class="form-control" id="Location" name="Location" placeholder="Enter Client's firstname..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-lastname">Number of Guests</label>
-                                        <input type="number" min="0" class="form-control" id="contact1-lastname" name="contact1-lastname" placeholder="Enter Client's lastname..">
+                                        <label for="GuestNo">Number of Guests</label>
+                                        <input type="number" min="0" class="form-control" id="GuestNo" name="GuestNo" placeholder="Enter Client's lastname..">
                                     </div>
-                                    <label class="form-group col-12">Utilities</label>
+                                    <label for="Utilities" class="form-group col-12">Utilities</label>
                                     <div class="form-group col-12">
                                             <div class="custom-control custom-checkbox custom-control-inline mb-5">
-                                                <input class="custom-control-input" type="checkbox" name="example-inline-checkbox1" id="example-inline-checkbox1" value="option1" checked>
-                                                <label class="custom-control-label" for="example-inline-checkbox1">Electricity</label>
+                                                <input class="custom-control-input" type="checkbox" name="Electricity" id="Electricity" value="Electricity" checked>
+                                                <label class="custom-control-label" for="Electricity">Electricity</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-5">
-                                                <input class="custom-control-input" type="checkbox" name="example-inline-checkbox2" id="example-inline-checkbox2" value="option2">
-                                                <label class="custom-control-label" for="example-inline-checkbox2">Water</label>
+                                                <input class="custom-control-input" type="checkbox" name="Water" id="Water" value="Water">
+                                                <label class="custom-control-label" for="Water">Water</label>
                                             </div>
                                             <div class="custom-control custom-checkbox custom-control-inline mb-5">
                                                 <input class="custom-control-input" type="checkbox" name="example-inline-checkbox3" id="example-inline-checkbox3" value="option3">
@@ -39,12 +39,12 @@
                                             </div>
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="catering-date">Date:</label>
-                                        <input type="date" class="form-control" id="catering-date" name="catering-date">
+                                        <label for="Date">Date:</label>
+                                        <input type="date" class="form-control" id="Date" name="Date">
                                     </div>
                                     <div class="form-group col-6">
-                                        <label for="catering-time">Time:</label>
-                                        <input type="time" class="form-control" id="catering-time" name="catering-time">
+                                        <label for="Time">Time:</label>
+                                        <input type="time" class="form-control" id="Time" name="Time">
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-alt-info">

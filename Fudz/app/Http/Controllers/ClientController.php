@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
-    public function create(Request $data)
+    public function create(Request $data): \Illuminate\Http\RedirectResponse
     {
         //dd($data);
         Client::create([
@@ -21,14 +21,13 @@ class ClientController extends Controller
         ]);
         return redirect()->back();
     }
-    public function index()
+    public function Out()
     {
-        $teachers = Client::all();
-
-
-
-        return view('admin.teachers.index', [
-            'teachers' => $teachers,
+       return view('Output/ClientOut', [
+        'clients' => Client::all()
         ]);
+    }
+    public function delete(){
+
     }
 }

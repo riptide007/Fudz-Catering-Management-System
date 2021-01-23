@@ -9,59 +9,33 @@
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="ClientIn.blade.php" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page7" method="post" onsubmit="return false;">
                                 <div class="form-group row">
                                     <div class="col-6">
-                                        <label for="contact1-surname">Surname</label>
-                                        <input type="text" class="form-control" id="contact1-surname" name="contact1-surname" placeholder="Enter Client's Surname..">
+                                        <label for="ProductionLead">Production Leader</label>
+                                        <input type="text" class="form-control" id="ProductionLead" name="ProductionLead" placeholder="Enter Production Leader..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-firstname">Firstname</label>
-                                        <input type="text" class="form-control" id="contact1-firstname" name="contact1-firstname" placeholder="Enter Client's firstname..">
+                                        <label for="ProductionTeam">Production Team</label>
+                                        <input type="text" class="form-control" id="ProductionTeam" name="ProductionTeam" placeholder="Enter Production Team..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-lastname">Lastname</label>
-                                        <input type="text" class="form-control" id="contact1-lastname" name="contact1-lastname" placeholder="Enter Client's lastname..">
+                                        <label for="ServiceLead">ServiceLead</label>
+                                        <input type="text" class="form-control" id="ServiceLead" name="ServiceLead" placeholder="Enter Service Leader..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="val-phoneus">Phone  <span class="text-danger"></span></label>
-                                        <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="Enter Client's phone number..">
+                                        <label for="ServiceTeam">ServiceTeam  <span class="text-danger"></span></label>
+                                        <input type="text" class="form-control" id="ServiceTeam" name="ServiceTeam" placeholder="Enter Service Team..">
                                     </div>
 
-                                    <div class="col-12">
-                                        <label for="contact1-email">Email</label>
-
-                                        <div class="input-group">
-                                            <input type="email" class="form-control" id="contact1-email" name="contact1-email" placeholder="Enter Client's email..">
-                                            <div class="input-group-append">
-                                                        <span class="input-group-text">
-                                                            <i class="fa fa-envelope-o"></i>
-                                                        </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <label for="contact1-address">Address</label>
-                                        <input type="text" class="form-control" id="contact1-address" name="contact1-address" placeholder="Enter Client's address..">
-                                    </div>
-                                </div>
-
-
-                                <!--<div class="form-group row">
-                                    <div class="col-lg-8">
-                                        <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
-                                    </div>
-                                </div>-->
-
-
-
-                                <div class="form-group row">
-                                    <div class="col-12">
+                                    <div class="form-group row">
+                                        <div class="col-12">
                                         <button type="submit" class="btn btn-alt-info">
                                             <i class="fa fa-send mr-5"></i> Submit
                                         </button>
                                     </div>
                                 </div>
+                            </div>
                             </form>
                         </div>
                     </div>

@@ -21,7 +21,7 @@ class CreateEmployeeTable extends Migration
             $table->string('Telephone');
             $table->string('email')->unique();
             $table->string('Address');
-            $table->string('Speciality');
+            $table->multiLineString('Speciality');
             $table->string('Average_Pay');
             $table->timestamps();
         });

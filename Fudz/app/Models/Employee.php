@@ -12,7 +12,7 @@ class Employee extends Model
     public $table = 'employee';
     public $primaryKey = 'id';
 
-    protected $fillable = [
-        'Surname','Fname','Lname','Telephone','email','Address','Speciality','Average_Pay'
+    protected $guarded = [
+
     ];
 }

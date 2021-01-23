@@ -12,7 +12,7 @@ class ShoppingList extends Model
     public $table = '_shopping_list';
     public $primaryKey = 'id';
 
-    protected $fillable = [
-        'Productname','Quantity','PurchaseLocation','CostperUnit','Unit'
+    protected $guarded = [
+
     ];
 }

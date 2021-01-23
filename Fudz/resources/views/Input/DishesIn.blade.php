@@ -9,27 +9,27 @@
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="ClientIn.blade.php" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page8" method="post" onsubmit="return false;">
                                 <div class="form-group row">
                                     <div class="col-6">
-                                        <label for="contact1-surname">Surname</label>
-                                        <input type="text" class="form-control" id="contact1-surname" name="contact1-surname" placeholder="Enter Client's Surname..">
+                                        <label for="Starters">Starters</label>
+                                        <input type="text" class="form-control" id="Starters" name="Starters" placeholder="Enter Starters..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-firstname">Firstname</label>
+                                        <label for="contact1-firstname">Accompaniments</label>
                                         <input type="text" class="form-control" id="contact1-firstname" name="contact1-firstname" placeholder="Enter Client's firstname..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-lastname">Lastname</label>
+                                        <label for="contact1-lastname">Proteins</label>
                                         <input type="text" class="form-control" id="contact1-lastname" name="contact1-lastname" placeholder="Enter Client's lastname..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="val-phoneus">Phone  <span class="text-danger"></span></label>
+                                        <label for="val-phoneus">Dessert  <span class="text-danger"></span></label>
                                         <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="Enter Client's phone number..">
                                     </div>
 
                                     <div class="col-12">
-                                        <label for="contact1-email">Email</label>
+                                        <label for="contact1-email">Beverage</label>
 
                                         <div class="input-group">
                                             <input type="email" class="form-control" id="contact1-email" name="contact1-email" placeholder="Enter Client's email..">
@@ -41,7 +41,7 @@
                                         </div>
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-address">Address</label>
+                                        <label for="contact1-address">Snacks</label>
                                         <input type="text" class="form-control" id="contact1-address" name="contact1-address" placeholder="Enter Client's address..">
                                     </div>
                                 </div>

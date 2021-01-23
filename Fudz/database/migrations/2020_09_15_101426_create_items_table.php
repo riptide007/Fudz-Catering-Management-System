@@ -16,12 +16,12 @@ class CreateItemsTable extends Migration
         Schema::create('items', function (Blueprint $table) {
            $table->id();
             $table->string('Name');
-            $table->string('quantity');
-            $table->string('priceperunit');
+            $table->integer('quantity');
+            $table->integer('priceperunit');
             $table->string('unit');
-            
+
             $table->string('ItemCondition');
-           
+
             $table->timestamps();
         });
     }

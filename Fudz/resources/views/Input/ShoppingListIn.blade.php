@@ -9,7 +9,7 @@
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="ClientIn.blade.php" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page6" method="post" onsubmit="return false;">
                                 <div class="form-group row">
                                     <div class="col-6">
                                         <label for="contact1-surname">Surname</label>

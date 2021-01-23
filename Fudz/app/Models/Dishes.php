@@ -12,7 +12,7 @@ class Dishes extends Model
     public $table = 'dishes';
     public $primaryKey = 'id';
 
-    protected $fillable = [
-        'Starters','Accompaniments','Proteins','Dessert','Beverage','Snacks'
+    protected $guarded = [
+
     ];
 }

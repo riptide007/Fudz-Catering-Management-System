@@ -12,7 +12,7 @@ class Supplier extends Model
     public $table = 'supplier';
     public $primaryKey = 'id';
 
-    protected $fillable = [
-        'Name','Telephone','email','Address'
+    protected $guarded = [
+
     ];
 }

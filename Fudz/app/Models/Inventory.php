@@ -12,7 +12,7 @@ class Inventory extends Model
     public $table = 'items';
     public $primaryKey = 'id';
 
-    protected $fillable = [
-        'Name','quantity','priceperunit','unit','ItemCondition'
+    protected $guarded = [
+
     ];
 }

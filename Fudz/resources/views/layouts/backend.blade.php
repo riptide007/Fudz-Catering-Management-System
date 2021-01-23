@@ -36,7 +36,7 @@
         <link rel="stylesheet" href="assets/js/plugins/flatpickr/flatpickr.min.css">
 
         <!-- You can include a specific file from public/css/themes/ folder to alter the default color theme of the template. eg: -->
-        <!-- <link rel="stylesheet" id="css-theme" href="{{ asset('/css/themes/corporate.css') }}"> -->
+         <link rel="stylesheet" id="css-theme" href="{{ asset('/css/themes/earth.css') }}">
         @yield('css_after')
 
         <!-- Scripts -->

@@ -17,12 +17,12 @@ class CreateCateringTable extends Migration
            $table->id();
             $table->string('Event_type');
             $table->string('Location');
-            $table->string('GuestNo');
+            $table->integer('GuestNo');
             $table->string('Utilities');
-           
-            $table->string('Date');
-            $table->string('Time');
-            
+
+            $table->Date('Date');
+            $table->Time('Time');
+
             $table->timestamps();
         });
     }

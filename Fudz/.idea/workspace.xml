@@ -135,20 +135,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/Output" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Fudz\resources\views\Output" />
       <recent name="C:\wamp64\www\Fudz\resources" />
       <recent name="C:\wamp64\www\Fudz\resources\views" />
       <recent name="C:\wamp64\www\Fudz\resources\views\layouts" />
       <recent name="C:\wamp64\www\Fudz\resources\assets\media\favicons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Fudz\resources\views\Input" />
       <recent name="C:\wamp64\www\Fudz\resources\views" />
+      <recent name="C:\wamp64\www\Fudz\resources\views\Input" />
     </key>
   </component>
   <component name="RunManager">
@@ -188,6 +189,11 @@
       <workItem from="1609661293565" duration="3123000" />
       <workItem from="1610888235989" duration="685000" />
       <workItem from="1610888973883" duration="4478000" />
+      <workItem from="1611045529253" duration="5807000" />
+      <workItem from="1611164415843" duration="678000" />
+      <workItem from="1611213952098" duration="3776000" />
+      <workItem from="1611289558293" duration="6580000" />
+      <workItem from="1611349525717" duration="9020000" />
     </task>
     <servers />
   </component>
@@ -201,6 +207,26 @@
           <url>file://$PROJECT_DIR$/resources/views/Input/InventoryIn.blade.php</url>
           <line>3</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/Input/DishesIn.blade.php</url>
+          <line>33</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/Output/ShoppingListOut.blade.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/Output/WorkDetailOut.blade.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php</url>
+          <line>99</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

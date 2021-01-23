@@ -9,29 +9,29 @@
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="InventoryIn.blade.php" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page5" method="post" onsubmit="return false;">
                                 <div class="form-group row">
                                     <div class="col-12">
-                                        <label for="contact1-surname">Name</label>
-                                        <input type="text" class="form-control" id="contact1-surname" name="contact1-surname" placeholder="Enter Item Surname..">
+                                        <label for="Name">Name</label>
+                                        <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Item Surname..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-firstname">Quantity</label>
-                                        <input type="number" class="form-control" id="contact1-firstname" name="contact1-firstname" placeholder="Enter Item firstname..">
+                                        <label for="quantity">Quantity</label>
+                                        <input type="number" class="form-control" id="quantity" name="quantity" min="0" placeholder="Enter Item quantity..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-lastname">Lastname</label>
-                                        <input type="text" class="form-control" id="contact1-lastname" name="contact1-lastname" placeholder="Enter Item lastname..">
+                                        <label for="priceperunit">Price per Unit</label>
+                                        <input type="number" class="form-control" id="priceperunit" name="priceperunit" min="0" placeholder="Enter Item price per unit..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="val-phoneus">Phone  <span class="text-danger"></span></label>
-                                        <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="Enter Client's phone number..">
+                                        <label for="unit">Unit<span class="text-danger"></span></label>
+                                        <input type="text" class="form-control" id="unit" name="unit" placeholder="Enter Client's phone number..">
                                     </div>
 
 
                                     <div class="col-6">
-                                        <label for="contact1-address">Address</label>
-                                        <input type="text" class="form-control" id="contact1-address" name="contact1-address" placeholder="Enter Client's address..">
+                                        <label for="ItemCondition">ItemCondition</label>
+                                        <input type="text" class="form-control" id="ItemCondition" name="ItemCondition" placeholder="Enter Client's address..">
                                     </div>
                                 </div>
 

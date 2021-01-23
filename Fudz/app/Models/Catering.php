@@ -12,7 +12,7 @@ class Catering extends Model
     public $table = 'catering';
     public $primaryKey = 'id';
 
-    protected $fillable = [
-        'Event_type','Location','GuestNo','Utilities','Date','Time'
+    protected $guarded = [
+
     ];
 }

@@ -12,7 +12,7 @@ class Workdetail extends Model
     public $table = 'workdetail';
     public $primaryKey = 'id';
 
-    protected $fillable = [
-        'ProductionLead','ProductionTeam','ServiceLead','ServiceTeam'
+    protected $guarded = [
+
     ];
 }
