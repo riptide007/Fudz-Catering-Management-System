@@ -27,6 +27,11 @@
                                         <label for="unit">Unit<span class="text-danger"></span></label>
                                         <input type="text" class="form-control" id="unit" name="unit" placeholder="Enter Client's phone number..">
                                     </div>
+                                    <div class="col-6">
+                                        <label for="supplier_id">Supplier ID<span class="text-danger"></span></label>
+                                        <input type="text" class="form-control" id="supplier_id" name="supplier_id" placeholder="Enter Client's phone number..">
+                                    </div>
+
 
 
                                     <div class="col-6">

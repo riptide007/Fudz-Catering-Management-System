@@ -11,6 +11,14 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
@@ -148,6 +156,8 @@
       <recent name="C:\wamp64\www\Fudz\resources\assets\media\favicons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Fudz\database\migrations" />
+      <recent name="C:\wamp64\www\Fudz\non" />
       <recent name="C:\wamp64\www\Fudz\resources\views" />
       <recent name="C:\wamp64\www\Fudz\resources\views\Input" />
     </key>
@@ -194,6 +204,8 @@
       <workItem from="1611213952098" duration="3776000" />
       <workItem from="1611289558293" duration="6580000" />
       <workItem from="1611349525717" duration="9020000" />
+      <workItem from="1611506273162" duration="2229000" />
+      <workItem from="1611731949057" duration="15285000" />
     </task>
     <servers />
   </component>
@@ -210,7 +222,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/Input/DishesIn.blade.php</url>
-          <line>33</line>
+          <line>37</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -225,7 +237,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php</url>
-          <line>99</line>
+          <line>100</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

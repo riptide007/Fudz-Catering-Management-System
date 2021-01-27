@@ -13,14 +13,17 @@ class CreateDishesTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('dishes', function (Blueprint $table) {
             $table->id();
-            $table->string('Starters');
-            $table->string('Accompaniments');
-            $table->string('Proteins');
-            $table->string('Dessert');           
-            $table->string('Beverage');
-            $table->string('Snacks');
+            $table->unsignedBigInteger('catering_id');
+            $table->foreign('catering_id')->references('id')->on('catering');
+            $table->multiLineString('Starters');
+            $table->multiLineString('Accompaniments');
+            $table->multiLineString('Proteins');
+            $table->multiLineString('Dessert');
+            $table->multiLineString('Beverage');
+            $table->multiLineString('Snacks');
             $table->timestamps();
         });
     }
@@ -33,5 +36,8 @@ class CreateDishesTable extends Migration
     public function down()
     {
         Schema::dropIfExists('dishes');
+        Schema::table('dishes', function (Blueprint $table){
+            $table->dropForeign('catering_id');
+        });
     }
 }

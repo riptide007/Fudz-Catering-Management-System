@@ -14,7 +14,7 @@
                         <th>Event type</th>
                         <th>Location</th>
                         <th>Guest Number</th>
-                        <th style="width: 30%;">Utilities</th>
+                        <th style="width: 30%;">Location Details</th>
                         <th style="width: 30%;">Date</th>
                         <th style="width: 30%;">Time</th>
                         <th class="text-center" style="width: 100px;">Actions</th>
@@ -27,7 +27,7 @@
                             <td class="font-w600">{{$info->Event_type}}</td>
                             <td class="font-w600">{{$info->Location}}</td>
                             <td class="font-w600">{{$info->GuestNo}}</td>
-                            <td class="font-w600">{{$info->Utilities}}</td>
+                            <td class="font-w600">{{$info->Location_Details}}</td>
                             <td class="d-none d-sm-table-cell">{{$info->Date}}</td>
                             <td class="font-w600">{{$info->Time}}</td>
                             <td class="text-center">

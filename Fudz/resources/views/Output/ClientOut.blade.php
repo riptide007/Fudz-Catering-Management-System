@@ -11,9 +11,7 @@
                     <thead>
                     <tr>
                         <th class="text-center" style="width: 100px;"><i class="si si-user"></i></th>
-                        <th>Surname</th>
-                        <th>First name</th>
-                        <th>Last name</th>
+                        <th style="width: 30%;"> Client name</th>
                         <th style="width: 30%;">Telephone number</th>
                         <th style="width: 30%;">Email</th>
                         <th style="width: 30%;">Address</th>
@@ -24,11 +22,9 @@
                     @forelse($clients as $info)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
-                            <td class="font-w600">{{$info->Surname}}</td>
-                            <td class="font-w600">{{$info->Fname}}</td>
-                            <td class="font-w600">{{$info->Lname}}</td>
+                            <td class="font-w600">{{$info->Surname}}  {{$info->Fname}}  {{$info->Lname}}</td>
                             <td class="font-w600">{{$info->Telephone}}</td>
-                            <td class="d-none d-sm-table-cell">{{$info->email}}</td>
+                            <td class="font-w600">{{$info->email}}</td>
                             <td class="font-w600">{{$info->Address}}</td>
                             <td class="text-center">
                                 <div class="btn-group">

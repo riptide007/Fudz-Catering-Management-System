@@ -13,14 +13,18 @@ class CreateItemsTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('items', function (Blueprint $table) {
            $table->id();
+
             $table->string('Name');
             $table->integer('quantity');
             $table->integer('priceperunit');
             $table->string('unit');
+            $table->unsignedBigInteger('supplier_id');
 
             $table->string('ItemCondition');
+            $table->foreign('supplier_id')->references('id')->on('supplier');
 
             $table->timestamps();
         });
@@ -34,5 +38,8 @@ class CreateItemsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('items');
+        Schema::table('items', function (Blueprint $table){
+            $table->dropForeign('supplier_id');
+        });
     }
 }

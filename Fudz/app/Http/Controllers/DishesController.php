@@ -11,6 +11,7 @@ class DishesController extends Controller
     {
         //dd($data);
         Dishes::create([
+            'catering_id' => $data['catering_id'],
             'Starters' => $data['Starters'],
             'Accompaniments' => $data['Accompaniments'],
             'Proteins' => $data['Proteins'],

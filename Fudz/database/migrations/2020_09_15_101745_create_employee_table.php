@@ -13,6 +13,7 @@ class CreateEmployeeTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('employee', function (Blueprint $table) {
             $table->id();
             $table->string('Surname');

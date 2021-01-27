@@ -59,4 +59,12 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/page1-o','\App\Http\Controllers\ClientController@Out');
+Route::get('/page2-o','\App\Http\Controllers\CateringController@Out');
+Route::get('/page3-o','\App\Http\Controllers\EmployeeController@Out');
+Route::get('/page4-o','\App\Http\Controllers\SupplierController@Out');
+Route::get('/page5-o','\App\Http\Controllers\InventoryController@Out');
+Route::get('/page6-o','\App\Http\Controllers\ShoppingListController@Out');
+Route::get('/page7-o','\App\Http\Controllers\WorkDetailController@Out');
+Route::get('/page8-o','\App\Http\Controllers\DishesController@Out');
+
 

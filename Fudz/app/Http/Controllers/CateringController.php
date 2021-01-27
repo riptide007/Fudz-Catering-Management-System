@@ -11,10 +11,11 @@ class CateringController extends Controller
     {
         //dd($data);
         Catering::create([
+            'client_id' => $data['client_id'],
             'Event_type' => $data['Event_type'],
             'Location' => $data['Location'],
             'GuestNo' => $data['GuestNo'],
-            'Utilities' => $data['Utilities'],
+            'Location_Details' => $data['Location_Details'],
             'Date' => $data['Date'],
             'Time' => $data['Time'],
 

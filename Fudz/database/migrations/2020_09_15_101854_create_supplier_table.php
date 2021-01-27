@@ -13,6 +13,7 @@ class CreateSupplierTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('supplier', function (Blueprint $table) {
             $table->id();
             $table->string('Name');

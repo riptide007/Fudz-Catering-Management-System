@@ -13,12 +13,15 @@ class CreateWorkdetailTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('workdetail', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('catering_id');
+            $table->foreign('catering_id')->references('id')->on('catering');
             $table->string('ProductionLead');
-            $table->string('ProductionTeam');
+            $table->multiLineString('ProductionTeam');
             $table->string('ServiceLead');
-            $table->string('ServiceTeam');
+            $table->multiLineString('ServiceTeam');
             $table->timestamps();
         });
     }
@@ -31,5 +34,8 @@ class CreateWorkdetailTable extends Migration
     public function down()
     {
         Schema::dropIfExists('workdetail');
+        Schema::table('workdetail', function (Blueprint $table){
+            $table->dropForeign('catering_id');
+        });
     }
 }

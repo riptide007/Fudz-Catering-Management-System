@@ -12,6 +12,10 @@
                             <form class="js-validation-bootstrap" action="/page8" method="post" onsubmit="return false;">
                                 <div class="form-group row">
                                     <div class="col-6">
+                                        <label for="catering_id">Catering</label>
+                                        <input type="text" class="form-control" id="catering_id" name="catering_id" placeholder="Enter Starters..">
+                                    </div>
+                                    <div class="col-6">
                                         <label for="Starters">Starters</label>
                                         <input type="text" class="form-control" id="Starters" name="Starters" placeholder="Enter Starters..">
                                     </div>

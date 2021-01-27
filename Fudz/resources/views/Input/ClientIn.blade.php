@@ -1,6 +1,7 @@
 @extends('layouts.backend')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -9,7 +10,7 @@
 
                 <div class="card-body">
                     <div class="block-content">
-                        <form class="js-validation-bootstrap" action="/page1" method="post" >
+                        <form class="js-validation-bootstrap" action="/page1" method="post" onsubmit="">
                             @csrf
                             <div class="form-group row">
                                 <div class="col-6">
@@ -46,20 +47,10 @@
                                     <input type="text" class="form-control" id="Address" name="Address" placeholder="Enter Client's address..">
                                 </div>
                             </div>
-
-
-                            <!--<div class="form-group row">
-                                <div class="col-lg-8">
-                                    <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
-                                </div>
-                            </div>-->
-
-
-
                             <div class="form-group row">
                                 <div class="col-12">
-                                    <button type="submit" class="btn btn-alt-info">
-                                        <i class="fa fa-send mr-5"></i> Submit
+                                    <button type="submit" class="btn btn-alt-info js-swal-success">
+                                        <i class="fa fa-send text-success mr-5"></i> Submit
                                     </button>
                                 </div>
                             </div>

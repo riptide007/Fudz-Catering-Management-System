@@ -15,6 +15,7 @@ class InventoryController extends Controller
             'quantity' => $data['quantity'],
             'priceperunit' => $data['priceperunit'],
             'unit' => $data['unit'],
+            'supplier_id' => $data['supplier_id'],
             'ItemCondition' => $data['ItemCondition'],
 
 

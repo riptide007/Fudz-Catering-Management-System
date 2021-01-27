@@ -96,6 +96,7 @@
             'main-content-narrow'                       Full width Main Content with a percentage width (screen width > 1200px)
         -->
         <div id="page-container" class="sidebar-mini sidebar-inverse sidebar-o enable-page-overlay side-scroll page-header-modern main-content-boxed">
+            <div id="page-loader" class="show"></div>
             <!-- Side Overlay-->
             <aside id="side-overlay">
                 <!-- Side Header -->
@@ -154,7 +155,7 @@
                             <!-- Logo -->
                             <div class="content-header-item">
                                 <a class="link-effect font-w700" href="/home">
-                                    <span class="text-dual-primary-dark">{{ config('app.name', 'Fudz Enterprize Management System') }}</span>
+                                    <span class="text-dual-primary-dark" style="font-size:20px">Fudz Enterprise</span>
 
                                 </a>
                             </div>
@@ -167,28 +168,89 @@
                     <!-- Side Navigation -->
                     <div class="content-side content-side-full">
                         <ul class="nav-main">
-                            <li>
-                                <a href="/page1"><i class="si si-cup"></i><span class="sidebar-mini-hide">Page 1</span></a>
+
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible"></span><span class="sidebar-mini-hidden">Catering</span>
                             </li>
-
-                            <li class="nav-main-heading"><span class="sidebar-mini-visible">UI</span><span class="sidebar-mini-hidden">User Interface</span></li>
                             <li>
-                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-puzzle"></i><span class="sidebar-mini-hide">1</span></a>
-
-                            </li>
-
-                            <li class="nav-main-heading"><span class="sidebar-mini-visible">BD</span><span class="sidebar-mini-hidden">Build</span></li>
-                            <li class="open">
-                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-vector"></i><span class="sidebar-mini-hide">2</span></a>
-
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Client</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/page1">Add new client</a>
                                     </li>
-
-
-                            <li class="nav-main-heading"><span class="sidebar-mini-visible">PG</span><span class="sidebar-mini-hidden">Pages</span></li>
-                            <li>
-                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-globe-alt"></i><span class="sidebar-mini-hide">3</span></a>
-
+                                    <li>
+                                        <a href="/page1-o">View clients</a>
+                                    </li>
+                                </ul>
                             </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Catering</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/page2">Add new catering job</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page2-o">View catering jobs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Employee</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/page3">Add new Employee</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page3-o">View employees</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Dishes</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/page8">Add new dish</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page8-o">View dishes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Shopping List</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/page6">Add new shopping list</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page6-o">View clients</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible"></span><span class="sidebar-mini-hidden">Inventory</span></li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Items</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/page5">Add a new item</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page5-o">View items</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Supplier</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/page4">Add a new supplier</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page4-o">View suppliers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible"></span><span class="sidebar-mini-hidden">Reports</span></li>
+
                         </ul>
                     </div>
                     <!-- END Side Navigation -->

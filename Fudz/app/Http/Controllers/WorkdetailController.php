@@ -11,6 +11,7 @@ class WorkdetailController extends Controller
     {
         //dd($data);
         Workdetail::create([
+            'catering_id' => $data['catering_id'],
             'ProductionLead' => $data['ProductionLead'],
             'ProductionTeam' => $data['ProductionTeam'],
             'ServiceLead' => $data['ServiceLead'],

@@ -13,6 +13,7 @@ class CreateClientTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('client', function (Blueprint $table) {
             $table->id();
             $table->string('Surname');

@@ -11,12 +11,14 @@ class ShoppingListController extends Controller
     {
         //dd($data);
         ShoppingList::create([
-            'Surname' => $data['Surname'],
-            'Fname' => $data['Fname'],
-            'Lname' => $data['Lname'],
-            'Telephone' => $data['Telephone'],
-            'email' => $data['email'],
-            'Address' => $data['Address'],
+            'catering_id' => $data['catering_id'],
+            'item_id' => $data['item_id'],
+            'Productname' => $data['Productname'],
+            'Quantity' => $data['Quantity'],
+            'PurchaseLocation' => $data['PurchaseLocation'],
+            'CostperUnit' => $data['CostperUnit'],
+            'Unit' => $data['Unit'],
+
 
         ]);
         return redirect()->back();

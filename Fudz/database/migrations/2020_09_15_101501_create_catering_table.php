@@ -13,12 +13,15 @@ class CreateCateringTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('catering', function (Blueprint $table) {
            $table->id();
+            $table->unsignedBigInteger('client_id');
+            $table->foreign('client_id')->references('id')->on('client');
             $table->string('Event_type');
             $table->string('Location');
             $table->integer('GuestNo');
-            $table->string('Utilities');
+            $table->string('Location_Details');
 
             $table->Date('Date');
             $table->Time('Time');
@@ -35,5 +38,8 @@ class CreateCateringTable extends Migration
     public function down()
     {
         Schema::dropIfExists('catering');
+        Schema::table('catering', function (Blueprint $table){
+            $table->dropForeign('client_id');
+        });
     }
 }
