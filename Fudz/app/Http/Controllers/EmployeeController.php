@@ -26,7 +26,7 @@ class EmployeeController extends Controller
     public function Out()
     {
         return view('Output/EmployeeOut', [
-            'employee' => Employee::all()
+            'employee' => Employee::where('isActive',1)->get()
         ]);
     }
 }

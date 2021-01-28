@@ -25,6 +25,7 @@ class CreateCateringTable extends Migration
 
             $table->Date('Date');
             $table->Time('Time');
+            $table->boolean('isActive')->default(true);
 
             $table->timestamps();
         });

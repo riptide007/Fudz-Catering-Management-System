@@ -26,6 +26,7 @@ class CreateShoppingListTable extends Migration
             $table->string('Unit');
            $table->foreign('catering_id')->references('id')->on('catering');
             $table->foreign('item_id')->references('id')->on('items');
+            $table->boolean('isActive')->default(true);
             $table->timestamps();
         });
     }

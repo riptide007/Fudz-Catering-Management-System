@@ -168,9 +168,17 @@
                     <!-- Side Navigation -->
                     <div class="content-side content-side-full">
                         <ul class="nav-main">
-
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">User</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/OutUser">View Users</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="nav-main-heading"><span class="sidebar-mini-visible"></span><span class="sidebar-mini-hidden">Catering</span>
                             </li>
+
                             <li>
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Client</span></a>
                                 <ul>
@@ -210,20 +218,16 @@
                                     <li>
                                         <a href="/page8">Add new dish</a>
                                     </li>
-                                    <li>
-                                        <a href="/page8-o">View dishes</a>
-                                    </li>
+
                                 </ul>
                             </li>
                             <li>
                                 <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Shopping List</span></a>
                                 <ul>
                                     <li>
-                                        <a href="/page6">Add new shopping list</a>
+                                        <a href="/page6">Add new shopping list item</a>
                                     </li>
-                                    <li>
-                                        <a href="/page6-o">View clients</a>
-                                    </li>
+
                                 </ul>
                             </li>
                             <li class="nav-main-heading"><span class="sidebar-mini-visible"></span><span class="sidebar-mini-hidden">Inventory</span></li>
@@ -249,7 +253,20 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-main-heading"><span class="sidebar-mini-visible"></span><span class="sidebar-mini-hidden">Reports</span></li>
+                            <li class="nav-main-heading"><span class="sidebar-mini-visible"></span><span class="sidebar-mini-hidden"></span></li>
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Reports</span></a>
+                                <ul>
+                                    <li>
+                                        <a href="/page6-o">View Shopping list</a>
+                                    </li>
+                                    <li>
+                                        <a href="/page8-o">View Menu</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
 
                         </ul>
                     </div>
@@ -267,8 +284,8 @@
                     <button type="button" class="btn btn-circle btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
                         <i class="fa fa-navicon"></i>
                     </button>
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                    <a class="navbar-brand" href="{{ url('/home') }}">
+                        {{ config('app.name', 'Fudz Enterprise Management System') }}
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                         <span class="navbar-toggler-icon"></span>

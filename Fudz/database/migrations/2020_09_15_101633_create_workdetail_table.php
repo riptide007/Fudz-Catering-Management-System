@@ -19,9 +19,10 @@ class CreateWorkdetailTable extends Migration
             $table->unsignedBigInteger('catering_id');
             $table->foreign('catering_id')->references('id')->on('catering');
             $table->string('ProductionLead');
-            $table->multiLineString('ProductionTeam');
+            $table->string('ProductionTeam');
             $table->string('ServiceLead');
-            $table->multiLineString('ServiceTeam');
+            $table->string('ServiceTeam');
+            $table->boolean('isActive')->default(true);
             $table->timestamps();
         });
     }

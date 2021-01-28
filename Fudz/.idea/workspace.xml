@@ -156,6 +156,7 @@
       <recent name="C:\wamp64\www\Fudz\resources\assets\media\favicons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Fudz\resources\views\Reports" />
       <recent name="C:\wamp64\www\Fudz\database\migrations" />
       <recent name="C:\wamp64\www\Fudz\non" />
       <recent name="C:\wamp64\www\Fudz\resources\views" />
@@ -205,7 +206,9 @@
       <workItem from="1611289558293" duration="6580000" />
       <workItem from="1611349525717" duration="9020000" />
       <workItem from="1611506273162" duration="2229000" />
-      <workItem from="1611731949057" duration="15285000" />
+      <workItem from="1611731949057" duration="16492000" />
+      <workItem from="1611766789984" duration="1448000" />
+      <workItem from="1611785054463" duration="9986000" />
     </task>
     <servers />
   </component>
@@ -216,17 +219,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/Input/InventoryIn.blade.php</url>
-          <line>3</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/Input/DishesIn.blade.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/Output/ShoppingListOut.blade.php</url>
+          <url>file://$PROJECT_DIR$/resources/views/Reports/ShoppingListOut.blade.php</url>
           <line>3</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>

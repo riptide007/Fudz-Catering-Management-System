@@ -3,7 +3,7 @@
 @section('content')
     <div class="block">
         <div class="block-header block-header-default">
-            <h3 class="block-title">Full Table</h3>
+            <h3 class="block-title">Client Table</h3>
         </div>
         <div class="block-content">
             <div class="table-responsive">

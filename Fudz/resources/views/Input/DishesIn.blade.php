@@ -5,59 +5,44 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Insert Client Details') }}</div>
+                    <div class="card-header">{{ __('Insert Dishes Details') }}</div>
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="/page8" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page8" method="post" onsubmit="">
+                                @csrf
                                 <div class="form-group row">
                                     <div class="col-6">
                                         <label for="catering_id">Catering</label>
-                                        <input type="text" class="form-control" id="catering_id" name="catering_id" placeholder="Enter Starters..">
+                                        <input type="text" class="form-control" id="catering_id" name="catering_id" placeholder="Enter Catering title..">
                                     </div>
                                     <div class="col-6">
                                         <label for="Starters">Starters</label>
                                         <input type="text" class="form-control" id="Starters" name="Starters" placeholder="Enter Starters..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-firstname">Accompaniments</label>
-                                        <input type="text" class="form-control" id="contact1-firstname" name="contact1-firstname" placeholder="Enter Client's firstname..">
+                                        <label for="Accompaniments">Accompaniments</label>
+                                        <input type="text" class="form-control" id="Accompaniments" name="Accompaniments" placeholder="Enter Accompaniments..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="contact1-lastname">Proteins</label>
-                                        <input type="text" class="form-control" id="contact1-lastname" name="contact1-lastname" placeholder="Enter Client's lastname..">
+                                        <label for="Proteins">Proteins</label>
+                                        <input type="text" class="form-control" id="Proteins" name="Proteins" placeholder="Enter Proteins..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="val-phoneus">Dessert  <span class="text-danger"></span></label>
-                                        <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="Enter Client's phone number..">
+                                        <label for="Dessert">Dessert  <span class="text-danger"></span></label>
+                                        <input type="text" class="form-control" id="Dessert" name="Dessert" placeholder="Enter Dessert..">
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="Beverage">Snacks</label>
+                                        <input type="text" class="form-control" id="Beverage" name="Beverage" placeholder="Enter Beverages..">
                                     </div>
 
-                                    <div class="col-12">
-                                        <label for="contact1-email">Beverage</label>
 
-                                        <div class="input-group">
-                                            <input type="email" class="form-control" id="contact1-email" name="contact1-email" placeholder="Enter Client's email..">
-                                            <div class="input-group-append">
-                                                        <span class="input-group-text">
-                                                            <i class="fa fa-envelope-o"></i>
-                                                        </span>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="col-6">
-                                        <label for="contact1-address">Snacks</label>
-                                        <input type="text" class="form-control" id="contact1-address" name="contact1-address" placeholder="Enter Client's address..">
+                                        <label for="Snacks">Snacks</label>
+                                        <input type="text" class="form-control" id="Snacks" name="Snacks" placeholder="Enter Snacks..">
                                     </div>
                                 </div>
-
-
-                                <!--<div class="form-group row">
-                                    <div class="col-lg-8">
-                                        <input type="text" class="js-datepicker form-control js-datepicker-enabled" id="example-datepicker1" name="example-datepicker1" data-week-start="1" data-autoclose="true" data-today-highlight="true" data-date-format="mm/dd/yy" placeholder="mm/dd/yy">
-                                    </div>
-                                </div>-->
-
-
 
                                 <div class="form-group row">
                                     <div class="col-12">

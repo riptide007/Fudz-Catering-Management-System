@@ -11,21 +11,25 @@
                     <thead>
                     <tr>
                         <th class="text-center" style="width: 100px;"><i class="si si-user"></i></th>
-                        <th style="width: 30%;">Supplier name</th>
-                        <th style="width: 30%;">Telephone number</th>
-                        <th style="width: 30%;">Email</th>
-                        <th style="width: 30%;">Address</th>
+                        <th>Starters</th>
+                        <th>Accompaniments</th>
+                        <th>Proteins</th>
+                        <th style="width: 30%;">Dessert</th>
+                        <th style="width: 30%;">Beverage</th>
+                        <th style="width: 30%;">Snacks</th>
                         <th class="text-center" style="width: 100px;">Actions</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @forelse($supplier as $info)
+                    @forelse($dishes as $info)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
-                            <td class="font-w600">{{$info->Name}}</td>
-                            <td class="font-w600">{{$info->Telephone}}</td>
-                            <td class="d-none d-sm-table-cell">{{$info->email}}</td>
-                            <td class="font-w600">{{$info->Address}}</td>
+                            <td class="font-w600">{{$info->Starters}}</td>
+                            <td class="font-w600">{{$info->Accompaniments}}</td>
+                            <td class="font-w600">{{$info->Proteins}}</td>
+                            <td class="font-w600">{{$info->Dessert}}</td>
+                            <td class="font-w600">{{$info->Beverage}}</td>
+                            <td class="font-w600">{{$info->Snacks}}</td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit" >

@@ -10,7 +10,7 @@ class UserController extends Controller
     public function Out()
     {
         return view('Output/UserOut', [
-            'user' => User::all()
+            'user' => User::where('isActive',1)->get()
         ]);
     }
 }

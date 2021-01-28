@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 class ShoppingList extends Model
 {
     use HasFactory, Notifiable;
-    public $table = '_shopping_list';
+    public $table = 'shopping_list';
     public $primaryKey = 'id';
 
     protected $guarded = [

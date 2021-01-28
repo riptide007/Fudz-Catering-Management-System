@@ -11,21 +11,23 @@
                     <thead>
                     <tr>
                         <th class="text-center" style="width: 100px;"><i class="si si-user"></i></th>
-                        <th style="width: 30%;">Supplier name</th>
-                        <th style="width: 30%;">Telephone number</th>
-                        <th style="width: 30%;">Email</th>
-                        <th style="width: 30%;">Address</th>
+                        <th style="width: 30%;">Product name</th>
+                        <th>Quantity</th>
+                        <th>Purchase Location</th>
+                        <th>Cost per Unit</th>
+                        <th style="width: 30%;">Unit</th>
                         <th class="text-center" style="width: 100px;">Actions</th>
                     </tr>
                     </thead>
                     <tbody>
-                    @forelse($supplier as $info)
+                    @forelse($shoppinglist as $info)
                         <tr>
                             <td class="text-center">{{$loop->iteration}}</td>
-                            <td class="font-w600">{{$info->Name}}</td>
-                            <td class="font-w600">{{$info->Telephone}}</td>
-                            <td class="d-none d-sm-table-cell">{{$info->email}}</td>
-                            <td class="font-w600">{{$info->Address}}</td>
+                            <td class="font-w600">{{$info->Productname}}</td>
+                            <td class="font-w600">{{$info->Quantity}}</td>
+                            <td class="font-w600">{{$info->PurchaseLocation}}</td>
+                            <td class="d-none d-sm-table-cell">{{$info->CostperUnit}}</td>
+                            <td class="font-w600">{{$info->Unit}}</td>
                             <td class="text-center">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit" >

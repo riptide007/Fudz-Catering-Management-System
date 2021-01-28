@@ -22,8 +22,9 @@ class CreateEmployeeTable extends Migration
             $table->string('Telephone');
             $table->string('email')->unique();
             $table->string('Address');
-            $table->multiLineString('Speciality');
+            $table->string('Speciality');
             $table->string('Average_Pay');
+            $table->boolean('isActive')->default(true);
             $table->timestamps();
         });
     }

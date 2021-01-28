@@ -9,23 +9,24 @@
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="/page3" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page3" method="post" onsubmit="">
+                                @csrf
                                 <div class="form-group row">
                                     <div class="col-6">
                                         <label for="Surname">Surname</label>
                                         <input type="text" class="form-control" id="Surname" name="Surname" placeholder="Enter Employee's Surname..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="Firstname">Firstname</label>
-                                        <input type="text" class="form-control" id="Firstname" name="Firstname" placeholder="Enter Employee's firstname..">
+                                        <label for="Fname">Firstname</label>
+                                        <input type="text" class="form-control" id="Fname" name="Fname" placeholder="Enter Employee's firstname..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="Lastname">Lastname</label>
-                                        <input type="text" class="form-control" id="Lastname" name="Lastname" placeholder="Enter Employee's lastname..">
+                                        <label for="Lname">Lastname</label>
+                                        <input type="text" class="form-control" id="Lname" name="Lname" placeholder="Enter Employee's lastname..">
                                     </div>
                                     <div class="col-6">
-                                        <label for="Phone">Phone  <span class="text-danger"></span></label>
-                                        <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Enter Employee's phone number..">
+                                        <label for="Telephone">Telephone  <span class="text-danger"></span></label>
+                                        <input type="text" class="form-control" id="Telephone" name="Telephone" placeholder="Enter Employee's phone number..">
                                     </div>
 
                                     <div class="col-12">
@@ -46,11 +47,11 @@
                                     </div>
                                     <div class="col-6">
                                         <label for="Speciality">Speciality</label>
-                                        <input type="text" class="form-control" id="Speciality" name="Speciality" placeholder="Enter Employee's Specification..">
+                                        <textarea type="text" class="form-control" id="Speciality" name="Speciality" placeholder="Enter Employee's Specification.."></textarea>
                                     </div>
                                     <div class="col-6">
                                         <label for="Average_Pay">Average Pay</label>
-                                        <input type="text" class="form-control" id="Average_Pay" name="Average_Pay" placeholder="Enter Employee's Average Pay..">
+                                        <input type="number" class="form-control" id="Average_Pay" name="Average_Pay" placeholder="Enter Employee's Average Pay..">
                                     </div>
 
 

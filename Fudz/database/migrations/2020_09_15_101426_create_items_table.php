@@ -24,6 +24,7 @@ class CreateItemsTable extends Migration
             $table->unsignedBigInteger('supplier_id');
 
             $table->string('ItemCondition');
+            $table->boolean('isActive')->default(true);
             $table->foreign('supplier_id')->references('id')->on('supplier');
 
             $table->timestamps();

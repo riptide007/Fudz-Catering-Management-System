@@ -24,19 +24,20 @@ Route::view('/Landing', 'landing');
 Route::view('/page1', 'Input/ClientIn');
 Route::view('/page1-o', 'Output/ClientOut');
 Route::view('/page2', 'Input/CateringIn');
-Route::view('/page2-o', 'Input/CateringIn');
+Route::view('/page2-o', 'Output/CateringOut');
 Route::view('/page3', 'Input/EmployeeIn');
-Route::view('/page3-o', 'Input/EmployeeIn');
+Route::view('/page3-o', 'Output/EmployeeOut');
 Route::view('/page4', 'Input/SupplierIn');
-Route::view('/page4-o', 'Input/SupplierIn');
+Route::view('/page4-o', 'Output/SupplierOut');
 Route::view('/page5', 'Input/InventoryIn');
-Route::view('/page5-o', 'Input/InventoryIn');
+Route::view('/page5-o', 'Output/InventoryOut');
 Route::view('/page6', 'Input/ShoppingListIn');
-Route::view('/page6-o', 'Input/ShoppingListIn');
+Route::view('/page6-o', 'Output/ShoppingListOut');
 Route::view('/page7', 'Input/WorkDetailIn');
-Route::view('/page7-o', 'Input/WorkDetailIn');
+Route::view('/page7-o', 'Output/WorkDetailOut');
 Route::view('/page8', 'Input/DishesIn');
-Route::view('/page8-o', 'Input/DishesIn');
+Route::view('/page8-o', 'Output/DishesOut');
+Route::view('/OutUser', 'Output/UserOut');
 Route::view('/test-page', 'TestPage');
 Route::match(['get', 'post'], '/dashboard', function(){
     return view('dashboard');
@@ -66,5 +67,6 @@ Route::get('/page5-o','\App\Http\Controllers\InventoryController@Out');
 Route::get('/page6-o','\App\Http\Controllers\ShoppingListController@Out');
 Route::get('/page7-o','\App\Http\Controllers\WorkDetailController@Out');
 Route::get('/page8-o','\App\Http\Controllers\DishesController@Out');
+Route::get('/OutUser','\App\Http\Controllers\UserController@Out');
 
 

@@ -20,6 +20,7 @@ class CreateSupplierTable extends Migration
             $table->string('Telephone');
             $table->string('email')->unique();
             $table->string('Address');
+            $table->boolean('isActive')->default(true);
             $table->timestamps();
         });
     }

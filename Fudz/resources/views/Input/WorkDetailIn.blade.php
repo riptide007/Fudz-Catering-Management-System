@@ -9,7 +9,8 @@
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="/page7" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page7" method="post" onsubmit="">
+                                @csrf
                                 <div class="form-group row">
                                     <div class="col-6">
                                         <label for="ProductionLead">Production Leader</label>

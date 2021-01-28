@@ -9,23 +9,24 @@
 
                     <div class="card-body">
                         <div class="block-content">
-                            <form class="js-validation-bootstrap" action="/page4" method="post" onsubmit="return false;">
+                            <form class="js-validation-bootstrap" action="/page4" method="post" onsubmit="">
+                                @csrf
                                 <div class="form-group row">
                                     <div class="col-12">
-                                        <label for="contact1-sname">Supplier Name</label>
-                                        <input type="text" class="form-control" id="contact1-sname" name="contact1-sname" placeholder="Enter Supplier's Name..">
+                                        <label for="Name">Supplier Name</label>
+                                        <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Supplier's Name..">
                                     </div>
 
                                     <div class="col-12">
-                                        <label for="val-phoneus">Phone  <span class="text-danger"></span></label>
-                                        <input type="text" class="form-control" id="val-phoneus" name="val-phoneus" placeholder="Enter Supplier's phone number..">
+                                        <label for="Telephone">Telephone  <span class="text-danger"></span></label>
+                                        <input type="text" class="form-control" id="Telephone" name="Telephone" placeholder="Enter Supplier's phone number..">
                                     </div>
 
                                     <div class="col-12">
-                                        <label for="contact1-email">Email</label>
+                                        <label for="email">Email</label>
 
                                         <div class="input-group">
-                                            <input type="email" class="form-control" id="contact1-email" name="contact1-email" placeholder="Enter Supplier's email..">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Supplier's email..">
                                             <div class="input-group-append">
                                                         <span class="input-group-text">
                                                             <i class="fa fa-envelope-o"></i>
@@ -34,8 +35,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <label for="contact1-address">Address</label>
-                                        <input type="text" class="form-control" id="contact1-address" name="contact1-address" placeholder="Enter Supplier's address..">
+                                        <label for="Address">Address</label>
+                                        <input type="text" class="form-control" id="Address" name="Address" placeholder="Enter Supplier's address..">
                                     </div>
                                 </div>
 

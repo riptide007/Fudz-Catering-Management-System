@@ -18,12 +18,13 @@ class CreateDishesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('catering_id');
             $table->foreign('catering_id')->references('id')->on('catering');
-            $table->multiLineString('Starters');
-            $table->multiLineString('Accompaniments');
-            $table->multiLineString('Proteins');
-            $table->multiLineString('Dessert');
-            $table->multiLineString('Beverage');
-            $table->multiLineString('Snacks');
+            $table->string('Starters');
+            $table->string('Accompaniments');
+            $table->string('Proteins');
+            $table->string('Dessert');
+            $table->string('Beverage');
+            $table->string('Snacks');
+            $table->boolean('isActive')->default(true);
             $table->timestamps();
         });
     }
@@ -35,9 +36,10 @@ class CreateDishesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dishes');
         Schema::table('dishes', function (Blueprint $table){
             $table->dropForeign('catering_id');
         });
+        Schema::dropIfExists('dishes');
+
     }
 }
